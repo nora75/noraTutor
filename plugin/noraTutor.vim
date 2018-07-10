@@ -11,10 +11,17 @@
 
 let s:filedir = fnamemodify(resolve(expand('<sfile>:p')), ':p:h')
 let s:filedir = strcharpart(s:filedir,0,len(s:filedir)-6)
-if s:filedir !~ '\\$'
-  let s:filedir .= '\'
+
+if has('win32')
+  let s:separator = '\'
+else
+  let s:separator = '/'
 endif
-let s:filedir .= 'tutor\'
+
+if s:filedir !~ '\\$'
+  let s:filedir .= s:separator
+endif
+let s:filedir .= 'tutor'.s:separator
 let s:tutorfile = s:filedir.'tutor.txt'
 let s:tutorcopy = s:filedir.'tutorcopy.txt'
 
