@@ -18,7 +18,7 @@ else
   let s:separator = '/'
 endif
 
-if s:filedir !~ '\\$'
+if s:filedir !~ '\'.s:separator.'$'
   let s:filedir .= s:separator
 endif
 let s:filedir .= 'tutor'.s:separator
