@@ -25,8 +25,9 @@
 
       また、vimtutorをやったことがない人はvimtutorを先にやりましょう。
       起動方法:
-        1. ターミナルで vimtutor とタイプ
-        2. Kaoriya版を使用している場合 Vim / GVim 上で :Tutorial とタイプ
+        1. Vimの場合、ターミナルで vimtutor とタイプ
+        2. Kaoriya版 Vim / GVimの場合 Vim / GVim 上で :Tutorial とタイプ
+        3. NeoVimの場合、NeoVim 上で :Tutor とタイプ
 
       このチュートリアルは覚えるまで反復して学習する事を推奨します。
 
